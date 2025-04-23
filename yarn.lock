@@ -3025,10 +3025,10 @@ react-reconciler@^0.31.0:
   dependencies:
     scheduler "^0.25.0"
 
-react-three-map@^0.8.2:
-  version "0.8.2"
-  resolved "https://registry.yarnpkg.com/react-three-map/-/react-three-map-0.8.2.tgz#acf9da0ba0d06a17c486b1bebd7705462b76d1c1"
-  integrity sha512-y7P0uNOQftIawsSvbquC9DWlWPFYfk1EintCyQk45ihDt6VXCxkX/vlLwZLADDCAScQA5xH1LuR5G2NRtl1ysg==
+react-three-map@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-three-map/-/react-three-map-1.0.0.tgz#6e8c88315fb26144080d84c5ac30f3369c9b3b5b"
+  integrity sha512-ctmuJlEawPDMi0dJvfGEgbkkRQHRZgqY3f8pTmbN0i9EqJGsayXoHi9t/2etdJDx69IkJZWgCUNGUFs4yb06/A==
 
 react-use-measure@^2.1.7:
   version "2.1.7"

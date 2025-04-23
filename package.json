@@ -17,7 +17,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-map-gl": "^8.0.4",
-    "react-three-map": "^0.8.2",
+    "react-three-map": "^1.0.0",
     "three": "^0.176.0"
   },
   "devDependencies": {
