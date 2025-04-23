@@ -3,10 +3,12 @@ import * as React from 'react';
 import Map from 'react-map-gl/maplibre';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import '../css/styles.css'
-import { useFrame, Vector3 } from '@react-three/fiber';
+// import { useFrame, Vector3 } from '@react-three/fiber';
+import { useFrame } from '@react-three/fiber';
 import { Canvas } from "react-three-map/maplibre";
 import { Leva } from 'leva';
-import { Mesh, MathUtils, OrthographicCamera, CameraHelper, DirectionalLight } from "three";
+// import { Mesh, MathUtils, OrthographicCamera, CameraHelper, DirectionalLight } from "three";
+import { OrthographicCamera, CameraHelper, DirectionalLight } from "three";
 import { useEffect, useRef } from 'react'
 import { useThree } from '@react-three/fiber'
 
