@@ -132,8 +132,7 @@ const CubeWithShadow = () => {
                 rotation={[-Math.PI / 2, 0, 0]}
                 scale={clicked ? 1.2 : 1}
             >
-                <planeGeometry args={[1, 1]} />
-                {/* <shadowMaterial opacity={0.8} /> */}
+                <planeGeometry args={[1, 1]} />                
                 <meshStandardMaterial
                     color="black"
                     opacity={0.2}

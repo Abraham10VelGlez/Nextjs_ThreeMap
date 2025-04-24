@@ -85,6 +85,7 @@ const Words = () => {
     React.useEffect(() => {
         const loader = new FontLoader();
         //consultar mas tipos de letras y fuentes en link: https://fonts.google.com/?query=Christian+Robertson
+        /// convertidor de fuentes de tiff a .json https://gero3.github.io/facetype.js/
         // loader.load('/fonts/Roboto SemiCondensed_Bold.json', (font) => {
         loader.load('/fonts/Titan One_Regular.json', (font) => {
             const geometry = new TextGeometry('Mi ubicación =)', {
