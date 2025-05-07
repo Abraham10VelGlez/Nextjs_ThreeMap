@@ -5,7 +5,6 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 import '../css/styles.css'
 import { Canvas } from "react-three-map/maplibre";
 import { Leva, levaStore, useControls } from 'leva';
-import { useFrame } from '@react-three/fiber';
 import { FC, useEffect, useState } from "react";
 import { Coordinates, CoordinatesProps, NearCoordinates } from "react-three-map";
 import { Vector3, ColorRepresentation } from 'three';
