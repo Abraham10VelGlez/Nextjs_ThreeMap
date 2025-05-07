@@ -34,7 +34,7 @@ export function Map7() {
                     latitude={19.292536964352422} longitude={-99.65691804395397}>
                     <hemisphereLight args={["#ffffff", "#60666C"]} position={[1, 4.5, 3]} intensity={Math.PI} />
 
-                    <Model position={geoToPosition(19.31396247417896, -99.64117143331653, 19.292536964352422, -99.65691804395397)}></Model>
+                    <Model position={geoToPosition(19.314036223738118, -99.6411602693591, 19.292536964352422, -99.65691804395397)}></Model>
 
                 </Canvas>
             </Map>

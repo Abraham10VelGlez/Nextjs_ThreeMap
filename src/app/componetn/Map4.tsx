@@ -16,13 +16,13 @@ enum CoordinatesType {
 }
 
 export function Map4() {
-    const { overlay } = useControls({
+    useControls({
         overlay: {
             value: false,
         },
     });
 
-    const { blue, green, purple, scale } = useControls({
+    const { green, purple, scale } = useControls({
         scale: 1,
         blue: {
             value: [-0.1261, 51.508775],
@@ -68,8 +68,8 @@ export function Map4() {
                     <hemisphereLight args={["#ffffff", "#60666C"]} position={[1, 4.5, 3]} intensity={Math.PI} />
                     <MyBox scale={scale} position={[2, 0, 0]} color="blue" />
                     <CoordsControl
-                       longitude={green[0]}
-                       latitude={green[1]}
+                        longitude={green[0]}
+                        latitude={green[1]}
                     >
                         <MyBox scale={scale} position={[-2, 0, 0]} color="green" />
                     </CoordsControl>
@@ -129,49 +129,3 @@ const MyBox = ({
         </group>
     );
 };
-
-const Marker = () => {
-
-    const ref = React.useRef<THREE.Group>(null)
-
-    const [hovered, hover] = React.useState(false)
-    const [clicked, click] = React.useState(false)
-
-    useFrame((_state, delta) => {
-        if (!ref.current) return;
-        ref.current.rotation.y += delta;
-    })
-
-    return (
-        <group position={[0, 0, 0]}>
-            <mesh
-                castShadow
-                position={[0, 0.5, 0]}
-                ref={ref}
-                scale={clicked ? 1.1 : 1}
-                onClick={() => click(!clicked)}
-                onPointerOver={() => hover(true)}
-                onPointerOut={() => hover(false)}
-
-            >
-                <boxGeometry args={[1, 1, 1]} />
-                <meshStandardMaterial color={hovered ? '#60B5FF' : '#1DCD9F'}
-                    metalness={1.75} roughness={1.5}
-                />
-            </mesh>
-
-            <mesh
-                castShadow
-                position={[5, 0.5, 0]}
-                scale={clicked ? 1.1 : 1}
-            >
-                <boxGeometry args={[1, 1, 1]} />
-                <meshStandardMaterial color={'#60B5FF'}
-                    metalness={1.75} roughness={1.5}
-                />
-            </mesh>
-
-        </group>
-    )
-
-}
