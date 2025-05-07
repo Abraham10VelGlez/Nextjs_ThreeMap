@@ -7,6 +7,7 @@ import { Canvas } from "react-three-map/maplibre";
 import { Leva } from 'leva';
 
 import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry';
+
 import { FontLoader } from 'three/examples/jsm/loaders/FontLoader';
 import * as THREE from 'three';
 import { useFrame } from '@react-three/fiber';
