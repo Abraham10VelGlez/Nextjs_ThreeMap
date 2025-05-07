@@ -8,7 +8,8 @@ import { useFrame } from '@react-three/fiber';
 import { Canvas } from "react-three-map/maplibre";
 import { Leva } from 'leva';
 // import { Mesh, MathUtils, OrthographicCamera, CameraHelper, DirectionalLight } from "three";
-import { OrthographicCamera, CameraHelper, DirectionalLight } from "three";
+import { OrthographicCamera, CameraHelper, DirectionalLight } from 'three';
+import * as THREE from 'three';
 import { useEffect, useRef } from 'react'
 import { useThree } from '@react-three/fiber'
 
@@ -132,7 +133,7 @@ const CubeWithShadow = () => {
                 rotation={[-Math.PI / 2, 0, 0]}
                 scale={clicked ? 1.2 : 1}
             >
-                <planeGeometry args={[1, 1]} />                
+                <planeGeometry args={[1, 1]} />
                 <meshStandardMaterial
                     color="black"
                     opacity={0.2}
