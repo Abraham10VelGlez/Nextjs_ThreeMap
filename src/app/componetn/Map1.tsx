@@ -7,7 +7,7 @@ import '../css/styles.css'
 import { useFrame, Vector3 } from '@react-three/fiber';
 import { Canvas } from "react-three-map/maplibre";/// PERMITE A LOS MODELOS 3D ESTAR DE FORMA ESTATICA O GEOREFERENCIADA
 import { Leva } from 'leva';
-import { Mesh } from "three";
+import { Mesh } from 'three';
 
 export function Map1() {
     return <>
